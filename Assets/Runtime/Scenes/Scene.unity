@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 120283445}
   - component: {fileID: 120283444}
   - component: {fileID: 120283443}
+  - component: {fileID: 120283447}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -331,6 +332,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &120283447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120283442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162dce22dbac93f4fbd64e771d507815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: {fileID: 833816914}
 --- !u!1 &122159806
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +646,7 @@ GameObject:
   - component: {fileID: 465925464}
   - component: {fileID: 465925463}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextInputInsert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1797,7 +1811,7 @@ GameObject:
   - component: {fileID: 1231208806}
   - component: {fileID: 1231208805}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextInputSearch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1951,7 +1965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0004638496}
+  m_AnchoredPosition: {x: 0, y: 0.00004935964}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1367005790
@@ -1966,7 +1980,7 @@ GameObject:
   - component: {fileID: 1367005793}
   - component: {fileID: 1367005792}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextButtonInsert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2325,7 +2339,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 567634992}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999968
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2450,7 +2464,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1883073316}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 120283447}
+        m_TargetAssemblyTypeName: DataHero, Assembly-CSharp
+        m_MethodName: InsertName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1883073316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2538,7 +2564,7 @@ GameObject:
   - component: {fileID: 2029140063}
   - component: {fileID: 2029140062}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextButtonSearch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
